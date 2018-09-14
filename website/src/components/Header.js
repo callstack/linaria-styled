@@ -30,7 +30,7 @@ export default function Header() {
               className={navLink}
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/callstack/linaria/tree/master/docs"
+              href="https://github.com/callstack/linaria-styled/tree/master/docs"
             >
               Docs
             </a>
@@ -40,7 +40,7 @@ export default function Header() {
               className={navLink}
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/callstack/linaria"
+              href="https://github.com/callstack/linaria-styled"
               title="GitHub"
             >
               <img className={image} src="./images/github.svg" alt="GitHub" />

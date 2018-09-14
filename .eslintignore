@@ -1,7 +1,5 @@
-benchmark/
-build/
-coverage/
-flow-typed/
-node_modules/
-vendor/
-website/static/server
+/__fixtures__/
+/coverage/
+/flow-typed/
+/lib/
+/node_modules/

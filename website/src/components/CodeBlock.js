@@ -3,7 +3,6 @@
 import React from 'react';
 import { css, names } from 'linaria';
 import theme from '../styles/theme';
-import '../utils/prismTemplateString';
 
 type Props = {
   className?: string,

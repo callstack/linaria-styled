@@ -4,6 +4,10 @@ Linaria exposes a core `css` method alongside with small, but just enough amount
 
 ## Client APIs
 
+### `styled`
+
+TODO
+
 ### `css`
 
 String tag for tagged template literals consisting CSS code. The tagged template literal is evaluated to a unique class name. Needed by the Babel plugin to extract the CSS.
@@ -16,7 +20,6 @@ const flower = css`
   color: violet,
 `;
 
-// flower === css__9o5awv -> without babel plugin applied
 // flower === flower__9o5awv –> with babel plugin
 ```
 
@@ -74,34 +77,6 @@ export function Block({ className }) {
   return <div {...styles(container, className)} />;
 }
 ```
-
-### `include(...classNames: string[]) => string`
-
-Takes a class name previously created with the `css` tag and returns the CSS text for the class name.
-
-```js
-import { css, include } from 'linaria';
-
-const width = 100;
-
-const text = css`
-  font-weight: 400;
-`;
-
-const title = css`
-  @media (max-width: ${width}px) {
-    font-family: monospace;
-  }
-`;
-
-const header = css`
-  ${include(text, title)};
-
-  font-family: sans-serif;
-`;
-```
-
-Here, the final CSS text for `header` will include the CSS from `text` and `title`.
 
 ## Server APIs (`linaria/server`)
 
